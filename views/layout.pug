@@ -1,0 +1,35 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(http-equiv="x-ua-compatible" content="ie-edge")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    script(type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js")
+    script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(type='text/javascript' src="/style/project2.js")
+    link(rel="stylesheet" href="/style/main.css")
+
+nav(class="navbar navbar-default")
+  div(class="container-fluid")
+    a(id='logo' class='navbar-brand' href='/')
+      img(src='/style/logo.png' id='logo')
+    ul(class="nav navbar-nav navbar-right")
+      if(!username || (username===''))
+       li
+         a(id='Signup' href="/register") Sign Up
+           span(class="glyphicon glyphicon-user")
+       li
+         a(id="Login" href="/") Log In
+           span(class="glyphicon glyphicon-log-in")
+      else
+        li
+          a(href="/logout") Log out
+           span(class="glyphicon glyphicon-log-out")
+        li
+          a(href="/") #{username}
+            span(class="glyphicon glyphicon-user")
+
+
+block content

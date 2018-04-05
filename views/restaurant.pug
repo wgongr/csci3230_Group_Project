@@ -1,0 +1,68 @@
+extends layout2
+block content
+  div(class="wrapper")
+   div(id='focus')
+    ul
+     li
+      a(href="#")
+       img(class='toronto' src='style/toronto.jpg')
+       img(class='toronto location_res' src='style/toronto_res.jpg')
+     li
+      a(href="#")
+       img(class='hongkong' src='style/hongkong.jpg')
+       img(class='honkong location_res' src='style/hongkong_res.jpg')
+     li
+      a(href="#")
+       img(id='tokyo' src='style/tokyo.jpg')
+       img(class='tokyo location_res' src='style/tokyo_res.jpg')
+
+     li
+      a(href='#')
+       img(id='paris' src='style/paris.jpg')
+       img(class='tokyo location_res' src='style/paris_res.jpg')
+
+
+  div(id='restaurangtbg' class='container')
+    div(id="mapWrapper" class="col-md-13")
+      div(id="map")
+    div(id="restaurant_list"  class="col-md-7")
+    div(class='container-fluid' id='popup_window_wrap')
+      form(action='/restaurantComment',
+             method='post',
+             class='form-horizontal')
+         div(id="key_words") restaurant
+          input(id='key' name='key_words' value='restaurant')
+         div(id='popup_window_resturant')
+          div(id='restaurant_window')
+           a(class='close' herf='#') &times
+           h3 Information
+           label(class='control-label') Name:
+           div(class='form-group')
+            div(id='restaurantN_appear')
+            input(id='restaurantN' name='restaurantN' type='hidden' val='')
+           label(class='control-label') Address:
+           div(class='form-group')
+            div(id='restaurantAddress_appear')
+            input(id="restaurantAddress" name='restaurantAddress' type='hidden' val='')
+           label(class='control-label') Rating:
+           div(class='form-group')
+            div(id='restaurantRating_appear')
+            input(id="restaurantRating" name='restaurantRating' type='hidden' val='')
+            div(id='restaurantImage')
+             input(id='restaurant_image' name='restaurant_image' type='URL' val='')
+           br
+           button(type='submit' id='yes' class='btn btn-warning btn-block') Comment Here
+           button(type='button' id='no' class='btn btn-warning btn-block') Go Back
+    footer(class='navbar-default bg-light navbar-fixed-bottom')
+     div(class='container')
+       div(class='row')
+         a(href='#' class='footerIcons')
+           i(class="fab fa-facebook fa-3x")
+         a(href='#' class='footerIcons')
+           i(class="fab fa-twitter fa-3x")
+         a(href='#' class='footerIcons')
+           i(class="fab fa-google-plus-g fa-3x")
+         a(href='#' class='footerIcons')
+           i(class='fab fa-linkedin-in fa-3x')
+         a(href='#' class='footerIcons')
+           i(class='fab fa-instagram fa-3x')

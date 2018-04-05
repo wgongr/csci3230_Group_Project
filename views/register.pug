@@ -1,0 +1,59 @@
+extends layout2
+block content
+
+  div(id='registerbg')
+    div(id='emptyfloat')
+    div(class='container')
+      div(class='offset col-md-1')
+      div(class='col-md-4' id='signupForm')
+        h3(id='SignupHeader') Create an Account
+        div(style='color:orange')= errorMessage
+        <br>
+        form(action='/processRegistration' method='post')
+          div(class='form-group')
+            input(type='text' id='firstname' name='firstname' placeholder='First Name' class='form-control')
+          <br>
+          div(class='form-group')
+            input(type='text' id='lastname' name='lastname' placeholder='Last Name' class='form-control')
+          <br>
+          div(class='form-group')
+            input(type='text',
+                id='username',
+                name='username',
+                placeholder='Username',
+                class='form-control')
+          <br>
+          div(class='form-group')
+            input(type='text',
+                id='email',
+                name='email',
+                placeholder='E-mail',
+                class='form-control')
+          <br>
+          div(class='form-group')
+            input(type='password',
+                id='pwd',
+                name='pwd',
+                placeholder='Password',
+                class='form-control')
+          <br>
+          div(class='form-group')
+            button(type='submit', class='btn btn-warning') Sign Up
+      div(class='col-md-2')
+      div(class='col-md-5')
+        <br>
+        <br>
+        img(src='/style/signup_illustration.png' id='signupPic')
+  footer(class='navbar-default bg-light navbar-fixed-bottom')
+    div(class='container')
+      div(class='row')
+        a(href='#' class='footerIcons')
+          i(class="fab fa-facebook fa-3x")
+        a(href='#' class='footerIcons')
+          i(class="fab fa-twitter fa-3x")
+        a(href='#' class='footerIcons')
+          i(class="fab fa-google-plus-g fa-3x")
+        a(href='#' class='footerIcons')
+          i(class='fab fa-linkedin-in fa-3x')
+        a(href='#' class='footerIcons')
+          i(class='fab fa-instagram fa-3x')

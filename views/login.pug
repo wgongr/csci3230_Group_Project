@@ -1,0 +1,50 @@
+extends layout2
+block content
+  br
+  br
+  br
+  div(class='container' id='regSuccessMsg')
+    div(class='whiteBox')
+      br
+      i(class='fas fa-user-times fa-9x')
+      h1(id='incorrectLogin')= title
+      h3 Please Try Again!
+      br
+      form(action='/processLogin',
+           method='post',
+           class='form-horizontal')
+
+        label(class='control-label col-md-1', for='username') Username:
+        div(class='col-md-4 form-group')
+          input(type='text',
+                id='username',
+                name='username',
+                placeholder='Username',
+                class='form-control')
+
+        label(class='control-label col-md-1', for='pwd') Password:
+        div(class='col-md-4 form-group')
+          input(type='password',
+                id='pwd',
+                name='pwd',
+                placeholder='Password',
+                class='form-control')
+
+        div(class='col-md-offset-1 col-md-1')
+          button(type='submit', class='btn btn-primary') Log In
+
+
+
+    footer(class='navbar-default bg-light navbar-fixed-bottom')
+     div(class='container')
+       div(class='row')
+         a(href='#' class='footerIcons')
+           i(class="fab fa-facebook fa-3x")
+         a(href='#' class='footerIcons')
+           i(class="fab fa-twitter fa-3x")
+         a(href='#' class='footerIcons')
+           i(class="fab fa-google-plus-g fa-3x")
+         a(href='#' class='footerIcons')
+           i(class='fab fa-linkedin-in fa-3x')
+         a(href='#' class='footerIcons')
+           i(class='fab fa-instagram fa-3x')

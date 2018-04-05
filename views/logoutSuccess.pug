@@ -1,0 +1,32 @@
+extends layout2
+block content
+  br
+  br
+  br
+  br
+  br
+  br
+  div(class='container' id='regSuccessMsg')
+    div(class='whiteBox')
+      br
+      br
+      i(class='fas fa-check-circle fa-9x')
+      h1 You have logged out successfully!
+      p(id="username") #{username}
+      div(id='counter') counter
+    br
+    br
+    br
+  footer(class='navbar-default bg-light navbar-fixed-bottom')
+   div(class='container')
+     div(class='row')
+       a(href='#' class='footerIcons')
+         i(class="fab fa-facebook fa-3x")
+       a(href='#' class='footerIcons')
+         i(class="fab fa-twitter fa-3x")
+       a(href='#' class='footerIcons')
+         i(class="fab fa-google-plus-g fa-3x")
+       a(href='#' class='footerIcons')
+         i(class='fab fa-linkedin-in fa-3x')
+       a(href='#' class='footerIcons')
+         i(class='fab fa-instagram fa-3x')

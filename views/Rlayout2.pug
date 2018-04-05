@@ -1,0 +1,56 @@
+extends layout2
+block content
+  div(class='container')
+    br
+    h1(class='commentText') Hello, #{username}!
+    br
+    div(class='col-md-6')
+      br
+      img(id='commentPic' src=image)
+      br
+      h3 You're About To Comment On This Restaurant... 
+      br
+      br
+      form(class='form-inline')
+        div(class='form-group col-md-4')
+          label() Name:
+          div=restaurantName
+        div(class='form-group col-md-4')
+          label() Address:
+          div=address
+        div(class='form-group col-md-4')
+          label() Average Rating:
+          div=rating
+      br
+      br
+      br
+    div(class='col-md-6')
+      form(action='/customerComment',
+           method='post',
+           class='form-horizontal')
+        h4 What is your message?
+        div(class='col-md-12 msgWrap')
+          textarea(id="customer-comments" name='customer_comment')
+          br
+          br
+        
+        h4 Out of 5, what would you rate it?
+        div(class='col-md-12 msgWrap')
+          input(id='customer_rating' name='customer_rating' value='/5' class='form-control' style='width:74%;')
+          br
+          br
+        button(type="submit" class='btn btn-danger') Submit
+  
+  footer(class='navbar-default bg-light navbar-fixed-bottom')
+   div(class='container')
+     div(class='row')
+       a(href='#' class='footerIcons')
+         i(class="fab fa-facebook fa-3x")
+       a(href='#' class='footerIcons')
+         i(class="fab fa-twitter fa-3x")
+       a(href='#' class='footerIcons')
+         i(class="fab fa-google-plus-g fa-3x")
+       a(href='#' class='footerIcons')
+         i(class='fab fa-linkedin-in fa-3x')
+       a(href='#' class='footerIcons')
+         i(class='fab fa-instagram fa-3x')

@@ -1,0 +1,79 @@
+doctype
+html
+  head
+    title=title
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(http-equiv="x-ua-compatible" content="ie-edge")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+    script(type="text/javascript" src="https://code.jquery.com/jquery-3.0.0.min.js")
+    script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+    script(type='text/javascript' src="/style/project2.js")
+    link(rel="stylesheet" href="/style/main.css")
+
+nav(class="navbar navbar-default")
+  div(class='container-fluid' id='pageheader')
+    form(class="form-inline")
+      div(class='input-group-addon')
+        a(id='logo' class='navbar-brand' href='/')
+          img(src='/style/logo.png' id='logo')
+        input(id="location" name="location" type="text" class="form-control" placeholder="location")
+        button(id='findbutton' class='btn btn-default' type="button")
+          i(class='glyphicon glyphicon-search')
+        div(class='form-group icon')
+          a(href='/restaurant' class='headerIcons')
+            i(class='fas fa-utensils fa-2x')
+          a(href='/cafe' class='headerIcons')
+            i(class='fas fa-coffee fa-2x')
+          a(href='/bar' class='headerIcons')
+            i(class='fas fa-glass-martini fa-2x')
+          a(href='/shopping_mall' class='headerIcons')
+            i(class='fas fa-shopping-cart fa-2x')
+          a(href='/pet_store' class='headerIcons')
+            i(class='fas fa-paw fa-2x')
+        div(class='form-group register')
+          ul(class="nav navbar-nav")
+            if(!username || (username===''))
+              li
+                a(id='Signup' href="/register") Sign Up
+                 span(class="glyphicon glyphicon-user")
+              li
+                a(id="Login" href="/") Log In
+                  span(class="glyphicon glyphicon-log-in")
+            else
+              li
+                a(href="/logout") Log out
+                  span(class="glyphicon glyphicon-log-out")
+              li
+                a(href="/") #{username}
+                  span(class="glyphicon glyphicon-user")
+
+
+body(id='lay2body')
+
+block content
+form(action='/processLogin',
+     method='post')
+   div(id='popup_window_login')
+    div(id='login_window')
+     a(class='close' herf='#') &times
+     <br>
+     h3 Login Information
+     <br>
+     div(class='col-md-12 form-group')
+      input(type='text',
+            id='username',
+            name='username',
+            placeholder='Username',
+            class='form-control')
+
+     div(class='col-md-12 form-group')
+      input(type='password',
+            id='pwd',
+            name='pwd',
+            placeholder='Password',
+            class='form-control')
+
+     div(class='col-md-1')
+      button(type='submit', class='btn btn-primary') Log In

@@ -1,0 +1,60 @@
+extends layout
+block content
+  form(action='/processLogin',
+       method='post')
+     div(id='popup_window_login')
+      div(id='login_window')
+       a(class='close' herf='#') &times
+       <br>
+       h3 Login Information
+       <br>
+       div(class='col-md-12 form-group')
+        input(type='text',
+              id='username',
+              name='username',
+              placeholder='Username',
+              class='form-control')
+
+       div(class='col-md-12 form-group')
+        input(type='password',
+              id='pwd',
+              name='pwd',
+              placeholder='Password',
+              class='form-control')
+
+       div(class='col-md-1')
+        button(type='submit', class='btn btn-primary') Log In
+        
+
+
+  div(id='imgsection' class='container-fluid')
+    img(id='indexbg' src='/style/indexbg2.jpg')
+  div(class='container')
+     h3 What are you looking for?
+
+  div(class='container' id='indexButtons')
+    a(href='/cafe')
+      button(class='button' id='cafeButton')
+        i(class='fas fa-coffee fa-9x')
+        <br>
+        <br> Cafe
+    a(href='/restaurant')
+      button(class='button' id='cafeButton')
+        i(class='fas fa-utensils fa-9x')
+        <br>
+        <br> Restaurant
+    a(href='/bar')
+      button(class='button' id='cafeButton')
+        i(class='fas fa-glass-martini fa-9x')
+        <br>
+        <br> Bars
+    a(href='/shopping_mall')
+      button(class='button' id='cafeButton')
+        i(class='fas fa-shopping-cart fa-9x')
+        <br>
+        <br> Shopping Mall
+    a(href='/pet_store')
+      button(class='button' id='cafeButton')
+        i(class='fas fa-paw fa-9x')
+        <br>
+        <br> Pet Store

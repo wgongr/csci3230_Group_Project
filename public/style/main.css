@@ -1,0 +1,530 @@
+.navbar{
+	border: none;
+	margin: 0;
+	padding-top: 10px;
+	background-color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.register{
+	margin-left:100px;
+}
+.icon{
+	margin-left:100px;
+}
+
+#counter{
+	display: none;
+}
+
+#signupForm{
+	background-color: black;
+	border-radius: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+html, body {
+	min-height: 90%;
+	margin-bottom: 30px;
+}
+
+#registerbg{
+	background-image: url('/style/food.png');
+	height: 92.5%;
+}
+
+#mapWrapper{
+	overflow: visible;
+	position: sticky;
+	top: 30px;
+	float: right;
+	padding-top: 20px;
+	padding-right: 90px;
+}
+
+#map{
+	height:300px;
+	width:300px;
+	float: right;
+	border-radius: 10px;
+}
+
+#key_words{
+	display: none;
+}
+
+#login-page{
+	display:none;
+}
+
+#logo{
+	height: 45px;
+	width: 45px;
+	margin-left: 30px;
+	margin-bottom: 3px;
+	margin-top: 7px;
+}
+
+.navbar-brand{
+	margin-left: 0;
+	padding: 0px;
+	height: 45px;
+	width: 45px;
+}
+
+#location{
+	width: 30%
+}
+
+.location_res{
+	position: absolute;
+
+}
+
+.input-group-addon {
+	background-color: black;
+	border: none;
+	padding: 0px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.searchPic {
+	width: 100px;
+	height: 100px;
+	border-radius: 20px;
+}
+
+#Login{
+	color: white;
+	height: 34px;
+}
+
+#Signup {
+	color: white;
+	height: 34px;
+
+}
+
+#restaurant_list{
+	padding: 20px;
+}
+
+#restaurantN{
+	margin-left: 13px;
+}
+
+#restaurantAddress_appear{
+	margin-left: 15px;
+}
+
+#restaurantRating_appear{
+	margin-left: 15px;
+}
+
+#restaurantN_appear{
+	margin-left: 15px;
+}
+
+#restaurantAdress{
+	margin-left: 13px;
+}
+
+#restaurantRating{
+	margin-left: 13px;
+}
+#tableContainer{
+	width:30px;
+}
+#commentTable{
+	width:30px;
+}
+.myTh, .myTd{
+	border: 1px solid black;
+	width: 10%;
+	height: auto;
+}
+
+.myTd{
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.shittr{
+	height:auto;
+	width:30px;
+}
+
+.commentText{
+	text-align: center;
+}
+
+#placeName{
+	font-weight: bold;
+	margin-right: 15px;
+}
+
+#placeRating{
+	float: right;
+}
+
+#commentPic{
+	height: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 40%;
+	border-radius: 10px;
+}
+
+.msgWrap{
+	padding: 0px;
+}
+
+#customer-comments{
+	height: 150px;
+	width: 400px;
+}
+
+#cafeButton{
+border: none;
+background-color: white;
+}
+
+#pageheader{
+	background-color: black;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a{
+	padding: 10px;
+	display: inline-block;
+	color: black;
+	padding-left: 35px;
+	padding-right: 35px;
+}
+
+a:hover{
+	color: orange;
+}
+
+#indexbg{
+	height: 400px;
+	width: 100%;
+}
+#imgsection {
+	padding: 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h3{
+	text-align: center;
+}
+
+#popup_window{
+	position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  top: 0;
+	overflow: auto;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, 0.7);
+}
+
+#comment_window{
+	margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+
+.close {
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+	padding: 5px;
+}
+
+#popup_window_resturant{
+	position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  top: 0;
+	left: 0;
+	overflow: auto;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, 0.7);
+}
+
+#popup_window_login{
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	top: 0;
+	overflow: auto;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background:rgba(0, 0, 0, 0.7);
+}
+
+.restaurant_name{
+	font-weight: bold;
+}
+
+#restaurant_window{
+	margin-left: -200px;
+	margin-top: -250px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  height: 400px;
+	width: 400px;
+  position: relative;
+  transition: all 2s ease-in-out;
+	top: 50%;
+	left: 50%;
+}
+
+#login_window{
+	margin-left: -175px;
+	margin-top: -200px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  height: 300px;
+	width: 350px;
+  position: relative;
+  transition: all 2s ease-in-out;
+	top: 50%;
+	left: 50%;
+}
+
+#username{
+	padding: 10px;
+}
+
+#email{
+	padding: 10px;
+}
+
+#pwd{
+	padding: 10px;
+}
+
+#regSuccessMsg{
+	text-align: center;
+}
+
+.whiteBox{
+	margin: auto;
+	height: 350px;
+	width: 1000px;
+	background-color: white;
+	opacity: 0.60;
+}
+
+#emptyfloat{
+	width: 100%;
+	height: 60px;
+}
+
+#SignupHeader{
+	color: orange;
+}
+
+#signupPic{
+	float: right;
+}
+
+#signupPic{
+	height: 400px;
+	width: 400px;
+}
+
+#lay2body{
+	background-image: url('/style/food.png');
+}
+
+tr{
+	border-style: groove;
+}
+
+tr:hover{
+	color: black;
+}
+
+.restaurantpic{
+	height: 75px;
+	width: 75px;
+	margin-bottom:1px;
+	border-radius: 10px;
+}
+
+td{
+	padding: 7px;
+	border-top: 0px;
+}
+
+footer{
+	text-align: center;
+	height: 70px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.8)
+}
+
+.footerIcons{
+	color: orange;
+	padding: 18px;
+}
+
+.footerIcons:hover{
+	color:black;
+}
+
+.headerIcons{
+	padding: 20px;
+	color: orange
+}
+
+.headerIcons:hover{
+	color: white;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+ul,li {
+    list-style:none;
+}
+
+.wrapper {
+	  padding-top:100px;
+		z-index:999;
+    width:800px;
+    margin:0 auto;
+    padding-bottom:50px;
+}
+
+#popupPic{
+	margin-top: -420px;
+	position: static;
+	margin-left: 215px;
+	border-radius: 10px;
+	height: 180px;
+	width: 130px;
+}
+#focus {
+	  border-radius: 50px;
+    height:380px;
+    width:800px;
+    overflow:hidden;
+    position:relative;
+}
+#focus>ul {
+  position:absolute;
+}
+
+#focus>ul>li {
+	  float:left;
+    width:800px;
+    height:380px;
+    background:black;
+}
+
+#focus>ul>li>a{
+	padding:0;
+	width: 0;
+	height: 0;
+}
+
+#focus>ul>li>a>img{
+	border-radius: 50px;
+	border:10px black dashed;
+	width:400px;
+	height:380px;
+	padding:0;
+}
+
+#focus>div.btn {
+    position:absolute;
+    width:100%;
+    height:10px;
+    padding:5px 10px;
+    right:0;
+    bottom:0;
+    text-align:right;
+    background:#000;
+    opacity:0.5;
+    filter:alpha(opacity=50);
+}
+#focus>div.btn>span {
+    display:inline-block;
+    width:25px;
+    height:20px;
+    margin-left:5px;
+    cursor:pointer;
+    background:#fff;
+    border:1px solid #A020F0;
+}
+
+#focus>div.preNext {
+    width:45px;
+    height:100px;
+    position:absolute;
+    top:90px;
+		background-color:black;
+    opacity:0;
+    filter:alpha(opacity=0);
+    cursor:pointer;
+}
+#focus>div.pre {
+    left:0;
+    background-position:left top;
+}
+#focus>div.next {
+    right:0;
+    background-position:right top;
+}
+#focus>span.hidden {
+    display:block;
+    width:400px;
+    height:260px;
+    background:#000;
+    opacity:0;
+    filter:alpha(opacity=0);
+    position:absolute;
+    cursor:pointer;
+}
+#focus>span.left {
+    top:0;
+    left:0;
+}
+#focus>span.right {
+    top:0;
+    right:0;
+}
+
+#indexButtons{
+	text-align: center;
+}
+
+#restaurantImage{
+	display:none;
+}
+.checked{
+	color:orange;
+}
